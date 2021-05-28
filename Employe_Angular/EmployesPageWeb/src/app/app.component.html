@@ -1,0 +1,35 @@
+<h1>Show Employees Information</h1>
+<div>
+    <input #term type="text" class="form-control" placeholder="Enter Id..." aria-label="Username" aria-describedby="basic-addon1" id="id_employe" (keyup)="buscar(term.value)">
+    <hr>
+   
+</div>
+<hr>
+<table class="table table-hover table-bordered table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">ContractTypeName</th>
+            <th scope="col">RoleId</th>
+            <th scope="col">RoleName</th>
+            <th scope="col">RoleDescription</th>
+            <th scope="col">HourlySalary</th>
+            <th scope="col">MonthlySalary</th>
+            <th scope="col">YearlySalary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employe of employes">
+            <td scope="col">{{employe.id}}</td>
+            <td scope="col">{{employe.name}}</td>
+            <td scope="col">{{employe.contractTypeName}}</td>
+            <td scope="col">{{employe.roleId}}</td>
+            <td scope="col">{{employe.roleName}}</td>
+            <td scope="col">{{employe.roleDescription}}</td>
+            <td scope="col">{{employe.hourlySalary}}</td>
+            <td scope="col">{{employe.monthlySalary}}</td>
+            <td scope="col">{{employe.anualSalary}}</td>
+        </tr>
+    </tbody>
+</table>
