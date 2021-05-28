@@ -1,0 +1,7 @@
+com\testMG\client\CallRestService.class
+com\testMG\model\Employe.class
+com\testMG\rest\EmployeRest.class
+com\testMG\model\EmployeInad.class
+com\testMG\control\CompleteInformation.class
+com\testMG\control\Control.class
+com\testMG\app\TestMgApplication.class
